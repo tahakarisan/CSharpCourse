@@ -18,7 +18,7 @@ namespace Classes
             {
                 if (_tc == 0)
                 {
-                    return 11111111111;
+                    return 111;
                 }
                 return _tc;
             }
