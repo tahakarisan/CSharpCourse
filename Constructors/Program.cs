@@ -13,7 +13,7 @@ namespace Constructors
         {
             CustomerManager customerManager = new CustomerManager(30);
             EmployeeManager employeeManager = new EmployeeManager(new DatabaseLogger());
-            employeeManager9.Add();
+            employeeManager.Add();
             customerManager.List();
             Console.ReadLine();
         }
