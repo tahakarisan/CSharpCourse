@@ -20,7 +20,7 @@ namespace AdoNetDemo
             SqlCommand command = new SqlCommand("Select * from products", _connection);
             SqlDataReader reader = command.ExecuteReader();
             List<Product> products = new List<Product>();
-            DataTable dataTable = new DataTable();
+            
            
             
             while (reader.Read())

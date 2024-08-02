@@ -35,6 +35,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exceptions", "Exceptions\Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdoNetDemo", "AdoNetDemo\AdoNetDemo.csproj", "{E649E2DC-C914-4016-A397-76373B9F81D7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkDemo", "EntityFrameworkDemo\EntityFrameworkDemo.csproj", "{0CC20C64-2023-4DE5-8FB5-BBBD3301A284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodChoice", "YemekSeçim\FoodChoice.csproj", "{42A1A919-5AF1-41DC-8BEE-B77236E304C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +109,14 @@ Global
 		{E649E2DC-C914-4016-A397-76373B9F81D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E649E2DC-C914-4016-A397-76373B9F81D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E649E2DC-C914-4016-A397-76373B9F81D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CC20C64-2023-4DE5-8FB5-BBBD3301A284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CC20C64-2023-4DE5-8FB5-BBBD3301A284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CC20C64-2023-4DE5-8FB5-BBBD3301A284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CC20C64-2023-4DE5-8FB5-BBBD3301A284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42A1A919-5AF1-41DC-8BEE-B77236E304C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42A1A919-5AF1-41DC-8BEE-B77236E304C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42A1A919-5AF1-41DC-8BEE-B77236E304C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42A1A919-5AF1-41DC-8BEE-B77236E304C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
