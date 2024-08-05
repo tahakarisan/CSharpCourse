@@ -8,6 +8,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using FoodChoice;
+
 namespace FoodChoice
 {
     public class FoodDal
@@ -22,30 +23,16 @@ namespace FoodChoice
                 _connection.Open();
             }
         }
+
         public List<Food> GetAll()
         {
-            ConnectionControl();
-            SqlCommand command = new SqlCommand("Select * from Foods", _connection);
-            SqlDataReader reader = command.ExecuteReader();
-            List<Food> foods = new List<Food>();
-            while (reader.Read())
+            using (FoodChoiceContext context = new FoodChoiceContext())
             {
-                Food food = new Food
-                {
-                    Id = Convert.ToInt32(reader["ID"]),
-                    Name = Convert.ToString(reader["Name"]),
-
-                };
-                foods.Add(food);
-
-
+                return context.Foods.ToList();
             }
-            reader.Close();
-            _connection.Close();
-            return foods;
-
-
         }
+
     }
-    
 }
+
+

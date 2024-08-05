@@ -115,6 +115,9 @@ namespace EntityFrameworkDemo
             tbxIdUpdate.Text = dgwProducts.CurrentRow.Cells[0].Value.ToString();
         }
 
-     
+        private void dgwProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

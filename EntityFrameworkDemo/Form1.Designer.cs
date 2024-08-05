@@ -323,6 +323,7 @@
             this.dgwProducts.Size = new System.Drawing.Size(685, 132);
             this.dgwProducts.TabIndex = 3;
             this.dgwProducts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellClick);
+            this.dgwProducts.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwProducts_CellContentClick);
             // 
             // Form1
             // 

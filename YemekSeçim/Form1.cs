@@ -27,5 +27,16 @@ namespace FoodChoice
         {
             dgwFoods.DataSource = _foodDal.GetAll();
         }
+
+        private void dgwFoods_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+           
+        }
+
+        private void tabPageDailyFoodList_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

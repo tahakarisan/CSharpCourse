@@ -30,9 +30,9 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageDailyFoodList = new System.Windows.Forms.TabPage();
+            this.dgwFoods = new System.Windows.Forms.DataGridView();
             this.tabPageCompanyList = new System.Windows.Forms.TabPage();
             this.tabPageEmployeeList = new System.Windows.Forms.TabPage();
-            this.dgwFoods = new System.Windows.Forms.DataGridView();
             this.tabControl1.SuspendLayout();
             this.tabPageDailyFoodList.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgwFoods)).BeginInit();
@@ -60,6 +60,16 @@
             this.tabPageDailyFoodList.TabIndex = 0;
             this.tabPageDailyFoodList.Text = "Günlük Yemek Listesi";
             this.tabPageDailyFoodList.UseVisualStyleBackColor = true;
+            this.tabPageDailyFoodList.Click += new System.EventHandler(this.tabPageDailyFoodList_Click);
+            // 
+            // dgwFoods
+            // 
+            this.dgwFoods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgwFoods.Location = new System.Drawing.Point(8, 6);
+            this.dgwFoods.Name = "dgwFoods";
+            this.dgwFoods.Size = new System.Drawing.Size(467, 459);
+            this.dgwFoods.TabIndex = 0;
+            this.dgwFoods.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgwFoods_CellContentClick);
             // 
             // tabPageCompanyList
             // 
@@ -79,14 +89,6 @@
             this.tabPageEmployeeList.TabIndex = 2;
             this.tabPageEmployeeList.Text = "Çalışan Listesi";
             this.tabPageEmployeeList.UseVisualStyleBackColor = true;
-            // 
-            // dgwFoods
-            // 
-            this.dgwFoods.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwFoods.Location = new System.Drawing.Point(8, 6);
-            this.dgwFoods.Name = "dgwFoods";
-            this.dgwFoods.Size = new System.Drawing.Size(467, 459);
-            this.dgwFoods.TabIndex = 0;
             // 
             // Form1
             // 

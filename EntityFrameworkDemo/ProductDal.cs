@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace EntityFrameworkDemo
 {
+    
     public class ProductDal
     {
          public List<Product> GetAll()
