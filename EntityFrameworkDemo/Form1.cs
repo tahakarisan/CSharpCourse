@@ -29,6 +29,11 @@ namespace EntityFrameworkDemo
         {
             dgwProducts.DataSource = _productDal.GetAll();
         }
+        private void SearchProducts(string key)
+        {
+            var result = _productDal.GetAll().Where(p=>p.Name.Contains(key)).ToList();
+            dgwProducts.DataSource= result;
+        }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -118,6 +123,11 @@ namespace EntityFrameworkDemo
         private void dgwProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void tbxSearch_TextChanged(object sender, EventArgs e)
+        {
+            SearchProducts(tbxSearch.Text);
         }
     }
 }
